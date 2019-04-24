@@ -1,0 +1,9 @@
+version: '1.0'
+services:
+  serverless:
+    image: andvalentini/serverless-awscli
+    env_file: .env
+    volumes:
+      - ./aws:/root/.aws
+      - ~/.ssh:/root/.ssh
+      - .:/opt/app #mount package directory

@@ -1,0 +1,4 @@
+apigw/.env
+!.env.example
+node_modules
+.serverless
